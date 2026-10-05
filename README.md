@@ -1,47 +1,101 @@
 # 📰 News Category Classification
 
-An NLP-based machine learning system that classifies news articles into four categories using text preprocessing, TF-IDF feature extraction, and multiple machine learning algorithms.
+A Machine Learning and Natural Language Processing (NLP) project that automatically classifies news articles into their appropriate categories based on their textual content.
 
-## 📌 Project Overview
-
-This project uses the AG News dataset to classify news articles into:
-
-- 🌍 World
-- ⚽ Sports
-- 💼 Business
-- 💻 Sci/Tech
-
-The project implements a complete text classification pipeline, starting from text preprocessing and feature engineering to model training, evaluation, hyperparameter tuning, and deployment using Streamlit.
+The project includes data preprocessing, exploratory data analysis, text processing, model training, evaluation, and a Streamlit web application for making predictions on new news articles.
 
 ---
 
-## 🚀 Project Workflow
+## 🚀 Project Overview
+
+With the huge amount of news published online every day, manually organizing news articles into categories can be time-consuming.
+
+This project uses Natural Language Processing and Machine Learning techniques to automatically identify the category of a news article from its text.
+
+The trained model can take a news headline or article text as input and predict its corresponding news category.
+
+---
+
+## ✨ Features
+
+- 📰 Automatic news category classification
+- 🧹 Text preprocessing and cleaning
+- 🔤 Natural Language Processing (NLP)
+- 📊 Exploratory Data Analysis
+- 🤖 Machine Learning model training
+- 📈 Model evaluation
+- 💾 Trained model storage
+- 🌐 Interactive Streamlit web application
+- 🔮 Prediction on new/unseen news articles
+- 📓 Complete Jupyter Notebook for experimentation and analysis
+
+---
+
+## 🛠️ Technologies Used
+
+### Programming Language
+
+- Python
+
+### Machine Learning & Data Science
+
+- Pandas
+- NumPy
+- Scikit-learn
+
+### Natural Language Processing
+
+- Text preprocessing
+- Tokenization
+- Stop-word removal
+- Feature extraction
+- Text vectorization
+
+### Visualization
+
+- Matplotlib
+- Seaborn
+
+### Application
+
+- Streamlit
+
+### Development Tools
+
+- Jupyter Notebook
+- VS Code
+- Git
+- GitHub
+
+---
+
+## 📂 Project Structure
 
 ```text
-AG News Dataset
-       ↓
-Data Exploration
-       ↓
-Text Preprocessing
-       ├── Lowercase
-       ├── Punctuation Removal
-       ├── Tokenization
-       ├── Stopword Removal
-       └── Lemmatization
-       ↓
-TF-IDF Vectorization
-       ↓
-Machine Learning Models
-       ├── Logistic Regression
-       ├── Multinomial Naive Bayes
-       ├── Linear SVM
-       └── Random Forest
-       ↓
-Model Evaluation
-       ↓
-Hyperparameter Tuning
-       ↓
-Tuned Linear SVM
-       ↓
-Streamlit Web Application
+news-category-classification/
+│
+├── data/
+│   └── Dataset files
+│
+├── models/
+│   └── Trained model files
+│
+├── src/
+│   └── Source code
+│
+├── app.py
+│   └── Streamlit application
+│
+├── News_Category_Classification.ipynb
+│   └── Data analysis, preprocessing, training and evaluation
+│
+├── requirements.txt
+│   └── Required Python packages
+│
+├── .gitignore
+│   └── Files excluded from Git
+│
+└── README.md
+    └── Project documentation
+
 ```
